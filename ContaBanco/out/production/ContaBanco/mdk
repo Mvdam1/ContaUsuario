@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class EntradeESaidaDeDados {
+    public static void main (String[] args){
+        //para entrada de dados usamos as variações de System.out.print(ln,f,somente print,
+
+        int valor1= 10;
+        int valor2= 5;
+        String total = "Total: ";
+        System.out.println(valor1 + valor2); // soma os valores
+        System.out.println(valor1 + valor2 + total);
+        System.out.println( total + valor1 + valor2);//Considera tudo como string
+        System.out.println(total+(valor1+valor2)); //essa seria a soma certa
+
+    //ENTRADA DE DADOS NO TECLADO
+
+
+    Scanner teclado = new Scanner (System.in);
+    System.out.println("Digite uma palavra: ");
+    String entradaTexto = teclado.next();
+    System.out.println("Voce digitou: " + entradaTexto);
+
+    System.out.println("Digite um valor:");
+    long  entradaLong = teclado.nextLong();
+    System.out.println();
+
